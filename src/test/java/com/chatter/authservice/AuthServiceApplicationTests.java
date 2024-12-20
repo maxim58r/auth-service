@@ -1,4 +1,4 @@
-package com.chatter.auth_service;
+package com.chatter.authservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
