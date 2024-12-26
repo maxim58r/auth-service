@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: auth-service
+  security:
+    user:
+      name: admin
+#      password: my-secure-password
+  redis:
+    enabled: false
 
 management:
   endpoints:
@@ -22,6 +28,8 @@ management:
       probes:
         enabled: true     # Включаем liveness/readiness-пробы
       show-details: ALWAYS  # Всегда показывать детальные сведения о состоянии (иначе может быть "UNKNOWN")
+      redis:
+        enabled: false
 
 # Если у вас включена Security, но хотите, чтобы /actuator/health работал БЕЗ авторизации,
 # можно либо в коде (Java) настроить antMatchers("/actuator/health").permitAll(),
