@@ -17,9 +17,9 @@ management:
       # Разрешаем открытый доступ (exposure) ко всем или конкретным эндпоинтам,
       # например health и info
       exposure:
-        include:
-          - health
-          - info
+        include: "*"
+#          - health
+#          - info
       base-path: /actuator
 
   # Настройки непосредственно для health-эндпоинта
