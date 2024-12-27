@@ -12,7 +12,7 @@
     </parent>
 
     <!-- Артефакт микросервиса -->
-    <artifactId>auth-service</artifactId>
+    <artifactId>authservice</artifactId>
 
     <!-- Зависимости -->
     <dependencies>
